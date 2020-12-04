@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/media/mauricio/Storage/Data64Gb/42/Vivo - Trilha/Processo/02_Etapa_teste_tecnico/ex2/apis/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from chardet.cli.chardetect import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
