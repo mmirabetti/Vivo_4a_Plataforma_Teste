@@ -6,10 +6,11 @@ def ex1_Vivo(vetor):
     """
     min = 0
     max = 15
-    d = {k: 0 for k in range(min,max+1)}
+    d = {k: 0 for k in range(min, max+1)}
     for i in vetor:
         try:
-            d[i]+=1
+            d[i] += 1
         except LookupError as error:
-            print(f'Erro: Valor do elemento do vetor não está entre {min} e {max}! ' + repr(error))
+            print(f'Erro: Valor do elemento do vetor não está entre {min} e \
+                  {max}! ' + repr(error))
     return str(d)
